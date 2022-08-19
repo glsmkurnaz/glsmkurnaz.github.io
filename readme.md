@@ -1,3 +1,3 @@
 # Gülsüm Kurnaz CV
 
-![Önizleme](/screenshot.png "Önizleme")
+![Önizleme](/Screenshot.png "Önizleme")
