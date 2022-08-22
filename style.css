@@ -1,3 +1,8 @@
+:root {
+  --borderColor: #ddd;
+  --contentTitle: #555;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +10,19 @@
   font-family: sans-serif;
 }
 body {
-  background-color: #ddd;
+  background-color: var(--borderColor);
 }
 a {
   text-decoration: none;
+}
+.marginTop30 {
+  margin-top: 30px;
+}
+.marginTop10 {
+  margin-top: 10px;
+}
+.marginTop5 {
+  margin-top: 5px;
 }
 .mainContainer {
   width: 794px;
@@ -19,8 +33,8 @@ a {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.306);
   padding: 30px 20px;
 }
+/* HEADER */
 .header {
-  border: 1px solid;
   width: 100%;
   height: 200px;
   display: flex;
@@ -29,7 +43,6 @@ a {
 .profileImgContainer {
   width: 200px;
   height: 200px;
-  border: 1px solid;
 }
 .profileImgContainer img {
   width: 100%;
@@ -41,21 +54,26 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: rgb(40, 5, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 5, 78, 1) 0%,
+    rgba(103, 9, 121, 1) 35%,
+    rgba(255, 0, 245, 1) 100%
+  );
+  color: #fff;
 }
+/* CONTENT */
 .content {
   width: 100%;
   min-height: 300%;
   margin-top: 10px;
   display: flex;
 }
+/* CONTENT LEFT */
 .leftContainer {
   width: 200px;
   min-height: 300px;
-}
-.rightContainer {
-  background-color: aqua;
-  min-height: 300px;
-  flex: 1;
 }
 .contactContainer {
   border-bottom: 1px solid #ddd;
@@ -65,36 +83,69 @@ a {
   font-size: 12px;
   color: #333;
 }
-#github{
-  color: #171515; 
+#github {
+  color: #171515;
 }
-.leftSectionTitle{
+.leftSectionTitle {
   font-size: 16px;
   margin: 20px 0px;
   border-bottom: 1px solid;
   padding-bottom: 5px;
 }
-.skillsContainer{
+.skillsContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.skillBox{
+.skillBox {
   background-color: #aaa;
   color: #fff;
   padding: 5px 10px;
   border-radius: 8px;
 }
-.languageTitle{
+.languageTitle {
   font-size: 16px;
   color: #171515;
   margin-bottom: 5px;
 }
-.languageContainer{
+.languageContainer {
   margin-bottom: 10px;
 }
-.languageDetail{
+.languageDetail {
   font-size: 12px;
   color: #999;
   padding-left: 5px;
+}
+/* CONTENT RİGHT */
+.rightContainer {
+  min-height: 300px;
+  flex: 1;
+  padding: 0px 20px;
+}
+.contentComponent {
+  border-left: 5px solid;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-color: #0072b1;
+}
+.componentTitle {
+  font-size: 24px;
+  border-bottom: 1px solid var(--contentTitle);
+  color: var(--contentTitle);
+}
+.conponentItemTitle {
+  font-size: 18px;
+  color: var(--contentTitle);
+}
+.conponentItemSubTitle {
+  font-size: 14px;
+  color: var(--contentTitle);
+}
+.componentItemInfo {
+  font-size: 12px;
+  color: var(--contentTitle);
+}
+.componentItemDescription {
+  font-size: 14px;
+  color: var(--contentTitle);
 }
